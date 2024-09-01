@@ -6,7 +6,7 @@ A especificação detalhada deste projeto foi elaborada com base em uma análise
 
 As personas identificadas no processo de análise foram detalhadas a seguir:
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-sint-2024-2-e2-proj-front-t1-grupo2-eixo2-projeto/docs/img/Andressa.png" alt="Persona1"/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2024-2-e2-proj-front-t1-grupo2-eixo2-projeto/blob/main/docs/img/Andressa.png" alt="Persona1"/>
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-sint-2024-2-e2-proj-front-t1-grupo2-eixo2-projeto/docs/img/Igor.png" alt="Persona2"/>
 
