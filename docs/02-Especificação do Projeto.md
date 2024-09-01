@@ -43,4 +43,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Diagrama de Casos de Uso
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2024-2-e2-proj-front-t1-grupo2-eixo2-projeto/blob/main/docs/img/diagrama-casos-de-uso.png" alt="Diagrama de casos de uso"/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2024-2-e2-proj-front-t1-grupo2-eixo2-projeto/blob/main/docs/img/casos-de-uso.png" alt="Diagrama de casos de uso"/>
