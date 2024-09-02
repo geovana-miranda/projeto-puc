@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# GESTIO
 
 `SISTEMAS PARA INTERNET`
 
@@ -6,7 +6,7 @@
 
 `EIXO 2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Este projeto consiste no desenvolvimento de uma plataforma web destinada à organização e gerenciamento de tarefas e projetos, tanto para equipes quanto para indivíduos. A ferramenta permitirá que os usuários criem quadros para organizar suas atividades, gerenciem listas de tarefas com prazos e descrições detalhadas, e colaborem com outros membros de forma eficiente.
 
 ## Integrantes
 
