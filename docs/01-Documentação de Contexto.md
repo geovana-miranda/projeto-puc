@@ -1,6 +1,6 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+No contexto em que vivemos, principalmente após a pandemia, em que o índice de cursos EAD e trabalhos remotos cresceram, a necessidade de uma ferramenta online para auxiliar no trabalho, seja individual ou em grupo, se tornou crucial. O projeto visa o desenvolvimento de um programa web que funcione como um gerenciador de projetos, com foco na organização de tarefas individuais ou em equipe. A ferramenta proposta permitirá que os usuários criem espaços para suas tarefas, colaborem com outros membros da equipe e gerenciem o progresso das atividades de forma eficiente.
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
