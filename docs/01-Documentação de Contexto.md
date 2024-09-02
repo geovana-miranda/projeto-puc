@@ -1,27 +1,24 @@
 # Introdução
 
-No contexto em que vivemos, principalmente após a pandemia, em que o índice de cursos EAD e trabalhos remotos cresceram, a necessidade de uma ferramenta online para auxiliar no trabalho, seja individual ou em grupo, se tornou crucial. O projeto visa o desenvolvimento de um programa web que funcione como um gerenciador de projetos, com foco na organização de tarefas individuais ou em equipe. A ferramenta proposta permitirá que os usuários criem espaços para suas tarefas, colaborem com outros membros da equipe e gerenciem o progresso das atividades de forma eficiente.
+ No contexto em que vivemos, principalmente após a pandemia, em que o índice de cursos EAD e trabalhos remotos cresceram, a necessidade de uma ferramenta online para auxiliar no trabalho, seja individual ou em grupo, se tornou crucial. O projeto visa o desenvolvimento de um programa web que funcione como um gerenciador de projetos, com foco na organização de tarefas individuais ou em equipe. A ferramenta proposta permitirá que os usuários criem espaços para suas tarefas, colaborem com outros membros da equipe e gerenciem o progresso das atividades de forma eficiente.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+ Atualmente, em ambientes colaborativos e de trabalho individual, a falta de organização e clareza nas responsabilidades pode gerar inúmeros desafios. Equipes e profissionais autônomos frequentemente enfrentam dificuldades para manter o controle sobre suas tarefas, cumprir prazos e gerenciar o progresso dos projetos de maneira eficiente. A desorganização pode resultar em perda de produtividade, atrasos e falhas na comunicação, afetando negativamente o desempenho e a qualidade do trabalho final.
+ Esses problemas são particularmente comuns em contextos onde não há uma ferramenta adequada para centralizar e estruturar as atividades, seja em pequenas e médias empresas, em trabalhos acadêmicos, ou mesmo entre profissionais independentes. A falta de uma solução eficaz para gerenciar e organizar tarefas torna-se um obstáculo significativo para qualquer grupo ou indivíduo que busque alcançar seus objetivos de maneira organizada e eficiente.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo principal deste trabalho é desenvolver uma aplicação web que auxilie projetos individuais ou em equipe na organização e gestão de tarefas de forma eficiente. Para atingir esse objetivo, a aplicação deve:
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+<ul>
+ <li>Centralizar a organização: Criar um espaço onde usuários possam estruturar seus projetos de forma clara e intuitiva, desde a criação de espaços dedicados para cada tarefa até a gestão detalhada delas;</li>
+ <li>Melhorar a colaboração: Oferecer recursos que permitam a colaboração efetiva entre membros de uma equipe, como a adição de participantes e a atribuição de tarefas específicas;</li>
+ <li>Aumentar a produtividade: Fornecer ferramentas para acompanhar o progresso das tarefas, com opções para adicionar descrições, prazos, e alterar o status conforme o trabalho avança;</li>
+ <li>Simplificar o processo: Criar uma interface fácil de usar, que atenda tanto profissionais que trabalham sozinhos quanto equipes que precisam de uma solução prática e eficiente.
+ </li>
+</ul>
+
+
 
 ## Justificativa
 
