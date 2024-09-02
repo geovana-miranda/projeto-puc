@@ -22,19 +22,19 @@ O objetivo principal deste trabalho é desenvolver uma aplicação web que auxil
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo. Ou, o grupo poderá consultar e justificar o impacto do problema para o público-alvo por meio de pesquisas em outras fontes. Neste caso, é essencial que todos os dados apresentados estejam acompanhados de suas fontes (conforme padrão ABNT).
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A escolha por desenvolver uma ferramenta de gerenciamento de tarefas online é justificada pela crescente demanda por soluções que integrem de maneira prática e eficiente as atividades de equipes, especialmente em um mundo onde o trabalho remoto se tornou mais comum. Com isso em mente, o desenvolvimento de uma plataforma focada em simplicidade e usabilidade, voltada para a organização de trabalhos em equipe e individuais, busca atender à necessidade de pequenas e médias equipes, além de profissionais que precisem de soluções acessíveis e intuitivas para a gestão de projetos.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo da plataforma inclui:
+<ul>
+ <li>Pequenas e Médias Equipes: Grupos que precisam de uma ferramenta acessível e fácil de usar para organizar e gerenciar projetos colaborativos. Isso inclui empresas, startups, e times de diferentes áreas que buscam melhorar a eficiência e a comunicação interna;</li>
+ <li>Profissionais Autônomos: Pessoas que trabalham de forma independente, como freelancers, consultores, ou empreendedores, que precisam de uma ferramenta para organizar suas tarefas e projetos pessoais de maneira simples e eficaz;</li>
+ <li>Estudantes e Acadêmicos: Indivíduos envolvidos em projetos acadêmicos, como trabalhos em grupo ou individuais, que precisam de um sistema para planejar, monitorar e concluir suas atividades com mais organização;</li>
+ <li>Entusiastas da Organização: Qualquer pessoa que valorize a organização pessoal e profissional, buscando uma ferramenta que ajude a estruturar e acompanhar suas tarefas e metas diárias, seja para trabalho ou para projetos pessoais.</li>
+</ul>
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+
+
+
+
