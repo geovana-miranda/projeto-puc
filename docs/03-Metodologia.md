@@ -39,12 +39,11 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+**Scrum Master:** Thiago Gonçalves Ribeiro.<br />
+**Product Owner:** Geovana Bárbara Miranda.<br />
+**Equipe de Desenvolvimento:** Geovana Bárbara Miranda e Thiago Gonçalves Ribeiro<br />
+**Equipe de Design:** Thiago Gonçalves Ribeiro.<br />
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 ### Processo
 
@@ -60,18 +59,19 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+| Ferramenta | Função |
+| ------------- | ------------- |
+| Visual Studio Code  | Editor do código fonte  |
+| Trello  | Gerenciamento do projeto  |
+| Figma  | Projeto de interface  |
+| Git  | Controle de versionamento  |
+| Github  | Hospesagem do repositório  |
+| WhatsApp  | Comunicação do time  |
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
+Como editor de código-fonte, foi escolhido o **Visual Studio Code** devido às suas diversas vantagens, como a integração direta com o Git e sua ampla gama de extensões que auxiliam na produtividade do desenvolvedor. <br /><br />
+ Como ferramenta de gestão do projeto, foi escolhido o **Trello**, pois sua interface é simples e intuitiva. A organização por meio de quadros e cartões permite uma visão clara do andamento do projeto.<br /><br />
+ Para o desenvolvimento do design e do protótipo da interface, o **Figma** foi escolhido pois possui diversas ferramentas e funcionalidades que permitem criar protótipos de layout de alta fidelidade. Além disso, por ser uma ferramenta baseada na web, não requer instalação de software e pode ser acessada de qualquer lugar.<br /><br />
+ Para a hospedagem do repositório foi escolhido o **GitHub**, pois ele mantém um histórico completo das alterações no código e permite o acesso remoto aos repositórios por ser uma plataforma baseada na web.<br /><br />
+ Para o versionamento de código-fonte o **Git** foi escolhido porque é o sistema de controle de versão mais utilizado entre os desenvolvedores, e por sua integração com o GitHub.<br /><br />
+ Como a equipe possui dois membros, o meio de comunicação utilizado é o **Whatsapp**, pois permite uma troca rápida de mensagens e arquivos. Como o acesso é pelo celular, as chamadas de aúdio podem ser feitas de qualquer lugar.<br /><br />
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
