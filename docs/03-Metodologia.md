@@ -1,9 +1,8 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+Neste projeto, utilizaremos o framework Scrum, uma metodologia ágil muito utilizada no desenvolvimento de softwares. O Scrum oferece flexibilidade ao processo de desenvolvimento, organizando o trabalho em sprints. Durante cada sprint, a equipe se compromete a completar um conjunto de tarefas dentro de um prazo. Ao final de cada sprint, é possível avaliar o progresso e implementar mudanças conforme necessário. Essa abordagem permite organizar e gerenciar o fluxo de tarefas de maneira mais eficiente,  adaptando-se às necessidades do projeto à medida que ele avança.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
 
 ## Controle de Versão
 
@@ -47,13 +46,13 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Para organização e distribuição das tarefas do projeto, optamos pelo Trello, que está estruturado da seguinte forma:
+
+**To Do:** Esta lista representa Sprint atual em que estamos trabalhando.
+**In progress:** Lista de tarefas iniciadas.
+**Done:** Lista das tarefas finalizadas.
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2024-2-e2-proj-front-t1-grupo2-eixo2-projeto/blob/main/docs/img/painel-trello.png" alt="Paindel do trello"/>
 
 ### Ferramentas
 
@@ -73,5 +72,5 @@ Como editor de código-fonte, foi escolhido o **Visual Studio Code** devido às 
  Para o desenvolvimento do design e do protótipo da interface, o **Figma** foi escolhido pois possui diversas ferramentas e funcionalidades que permitem criar protótipos de layout de alta fidelidade. Além disso, por ser uma ferramenta baseada na web, não requer instalação de software e pode ser acessada de qualquer lugar.<br /><br />
  Para a hospedagem do repositório foi escolhido o **GitHub**, pois ele mantém um histórico completo das alterações no código e permite o acesso remoto aos repositórios por ser uma plataforma baseada na web.<br /><br />
  Para o versionamento de código-fonte o **Git** foi escolhido porque é o sistema de controle de versão mais utilizado entre os desenvolvedores, e por sua integração com o GitHub.<br /><br />
- Como a equipe possui dois membros, o meio de comunicação utilizado é o **Whatsapp**, pois permite uma troca rápida de mensagens e arquivos. Como o acesso é pelo celular, as chamadas de aúdio podem ser feitas de qualquer lugar.<br /><br />
+ Como a equipe possui dois membros, o meio de comunicação utilizado é o **Whatsapp**, pois permite uma troca rápida de mensagens e arquivos. Como o acesso é pelo celular, as chamadas de audio podem ser feitas de qualquer lugar.<br /><br />
 
