@@ -52,7 +52,7 @@ Para organização e distribuição das tarefas do projeto, optamos pelo Trello,
 **In progress:** Lista de tarefas iniciadas.
 **Done:** Lista das tarefas finalizadas.
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2024-2-e2-proj-front-t1-grupo2-eixo2-projeto/blob/main/docs/img/painel-trello.png" alt="Paindel do trello"/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2024-2-e2-proj-front-t1-grupo2-eixo2-projeto/blob/main/docs/img/painel-trello.png" alt="Painel do trello"/>
 
 ### Ferramentas
 
@@ -65,6 +65,7 @@ As ferramentas empregadas no projeto são:
 | Figma  | Projeto de interface  |
 | Git  | Controle de versionamento  |
 | Github  | Hospesagem do repositório  |
+| Vercel  | Hospesagem da aplicação  |
 | WhatsApp  | Comunicação do time  |
 
 Como editor de código-fonte, foi escolhido o **Visual Studio Code** devido às suas diversas vantagens, como a integração direta com o Git e sua ampla gama de extensões que auxiliam na produtividade do desenvolvedor. <br /><br />
@@ -72,5 +73,6 @@ Como editor de código-fonte, foi escolhido o **Visual Studio Code** devido às 
  Para o desenvolvimento do design e do protótipo da interface, o **Figma** foi escolhido pois possui diversas ferramentas e funcionalidades que permitem criar protótipos de layout de alta fidelidade. Além disso, por ser uma ferramenta baseada na web, não requer instalação de software e pode ser acessada de qualquer lugar.<br /><br />
  Para a hospedagem do repositório foi escolhido o **GitHub**, pois ele mantém um histórico completo das alterações no código e permite o acesso remoto aos repositórios por ser uma plataforma baseada na web.<br /><br />
  Para o versionamento de código-fonte o **Git** foi escolhido porque é o sistema de controle de versão mais utilizado entre os desenvolvedores, e por sua integração com o GitHub.<br /><br />
+Para a hospedagem da aplicação, foi escolhida a plataforma **Vercel** porque ela se encarrega de fazer o build e o deploy da aplicação de forma automática, além de possuir integração com o GitHub.
  Como a equipe possui dois membros, o meio de comunicação utilizado é o **Whatsapp**, pois permite uma troca rápida de mensagens e arquivos. Como o acesso é pelo celular, as chamadas de audio podem ser feitas de qualquer lugar.<br /><br />
 
