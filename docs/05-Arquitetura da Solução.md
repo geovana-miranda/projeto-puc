@@ -30,18 +30,30 @@ As tecnologias que serão utilizadas no desenvolvimento da aplicação são:
 | CSS  | Linguagem de estilização  |
 | JavaScript  | Linguagem de programação  |
 | React  | Biblioteca JavaScript  |
+| JSX  | Extensão de sintaxe do JavaScript  |
 | UUID  | Biblioteca para gerar IDs únicos  |
 | Local Storage  | Armazenamento de dados no navegador  |
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Relação entre as tecnologias:
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2024-2-e2-proj-front-t1-grupo2-eixo2-projeto/blob/main/docs/img/diagrama_tecnologias.png" alt="imagem do diagrama de tecnologias"/>
+
+O usuário acessa o site por meio do navegador, que faz uma requisição HTTP ao servidor onde o site está hospedado. Em resposta, o servidor envia ao navegador os arquivos necessários para renderizar a página web. Esses arquivos incluem:
+
+**HTML:** é uma linguagem de marcação usada para estruturar o conteúdo da pagina.
+
+**CSS:** é uma linguagem de estilização usada para aplicar estilos a pagina.
+
+**JavaScript:** é uma linguagem de programação usada para criar interatividade e dinamismo a pagina.
+
+O **JSX** combina o HTML com o JavaScript, facilitando o desenvolvimento dos componentes React.
+
+O **React** é uma biblioteca usada para construir interfaces de usuário dinâmicas e interativas. Ele permite a criação de componentes reutilizáveis e o gerenciamento eficiente de estado da aplicação.
+
+O **UUID** permite a criação de identificadores únicos universais.
+
+Os dados inseridos pelo usuário no site podem ser armazenados na **Local Storage**, uma funcionalidade do navegador que permite o armazenamento de dados localmente no dispositivo do usuário. Esses dados permanecem de forma persistente no navegador, mesmo após o fechamento da página.
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+O site será hospedado na Vercel, e seu endereço será adicionado posteriormente nesse arquivo.
