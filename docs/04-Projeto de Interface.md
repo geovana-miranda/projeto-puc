@@ -2,7 +2,8 @@
 
 1. <a href='#wireframes'>Wireframes</a>
 2. <a href='#prototipo'>Protótipo</a>
-3. <a href='#userflow'>Userflow</a>
+3. <a href='#fluxograma'>Fluxograma</a>
+4. <a href='#userflow'>Userflow</a>
 
 <h2 id='wireframes'> Wireframes </h2>
 
@@ -42,6 +43,10 @@
 
 ![tela_de_tarefa_pop2_proto](https://github.com/user-attachments/assets/04f628b0-146c-4277-906b-f33496239c6a)
 ![tela_de_tarefa_pop1_proto](https://github.com/user-attachments/assets/d0e883db-c04b-4e70-af35-05098e55991c)
+
+<h2 id='fluxograma'>Fluxograma</h2>
+
+![fluxograma](https://github.com/user-attachments/assets/cb39c44e-33ae-4c4d-9472-82743acc0ef5)
 
 <h2 id='userflow'>Userflow</h2>
 
