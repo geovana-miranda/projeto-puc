@@ -1,4 +1,6 @@
-## Wireframes
+## <a href='#tela#>teste</a>
+
+<h2> Wireframes </h2>
 ![tela_de_login](https://github.com/user-attachments/assets/42b6bc34-9d47-49f2-a82a-43c400a106e6)
 ![tela_de_cadastro](https://github.com/user-attachments/assets/bad6fcfc-8b15-4787-b7c5-d7a3649b3f26)
 ![tela_de_quadros](https://github.com/user-attachments/assets/f8ec6fda-843f-4069-8599-2eb0ca7a504e)
@@ -10,3 +12,15 @@
 <h3>Tela de Login</h3>
 
 ![tela_de_login_proto](https://github.com/user-attachments/assets/441be688-eaaa-4ee3-8805-2a10f40e16fd)
+
+<h3 id='tela'>Tela de Cadastro</h3>
+
+![tela_de_cadastro_proto](https://github.com/user-attachments/assets/382ae684-7594-4034-898e-5f49b496e165)
+
+<h3>Tela de Quadros</h3>
+
+![tela_de_quadros_proto](https://github.com/user-attachments/assets/11b8e97e-4905-4c37-89eb-0fe269d9bf65)
+
+<h3>Tela de Criação/Edição de Quadros</h3>
+
+![tela_de_criacao_proto](https://github.com/user-attachments/assets/b9a461d4-d634-499b-baa7-312fac670dfd)
