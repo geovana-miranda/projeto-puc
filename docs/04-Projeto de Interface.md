@@ -44,3 +44,5 @@
 ![tela_de_tarefa_pop1_proto](https://github.com/user-attachments/assets/d0e883db-c04b-4e70-af35-05098e55991c)
 
 <h2 id='userflow'>Userflow</h2>
+
+![userflow](https://github.com/user-attachments/assets/a6a15c09-e2b3-4b52-b686-c3e1ab344729)
