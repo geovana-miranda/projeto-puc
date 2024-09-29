@@ -61,6 +61,7 @@ As ferramentas empregadas no projeto são:
 | Ferramenta | Função |
 | ------------- | ------------- |
 | Visual Studio Code  | Editor do código fonte  |
+| Vite  | Otimização do processo de desenvolvimento  |
 | Trello  | Gerenciamento do projeto  |
 | Figma  | Projeto de interface  |
 | Git  | Controle de versionamento  |
@@ -68,7 +69,8 @@ As ferramentas empregadas no projeto são:
 | Vercel  | Hospesagem da aplicação  |
 | WhatsApp  | Comunicação do time  |
 
-Como editor de código-fonte, foi escolhido o **Visual Studio Code** devido às suas diversas vantagens, como a integração direta com o Git e sua ampla gama de extensões que auxiliam na produtividade do desenvolvedor. <br /><br />
+ Como editor de código-fonte, foi escolhido o **Visual Studio Code** devido às suas diversas vantagens, como a integração direta com o Git e sua ampla gama de extensões que auxiliam na produtividade do desenvolvedor. <br /><br />
+ O **Vite** oferece desenvolvimento rápido com hot-reload eficiente, configuração simples e build otimizada para produção.<br /><br />
  Como ferramenta de gestão do projeto, foi escolhido o **Trello**, pois sua interface é simples e intuitiva. A organização por meio de quadros e cartões permite uma visão clara do andamento do projeto.<br /><br />
  Para o desenvolvimento do design e do protótipo da interface, o **Figma** foi escolhido pois possui diversas ferramentas e funcionalidades que permitem criar protótipos de layout de alta fidelidade. Além disso, por ser uma ferramenta baseada na web, não requer instalação de software e pode ser acessada de qualquer lugar.<br /><br />
  Para a hospedagem do repositório foi escolhido o **GitHub**, pois ele mantém um histórico completo das alterações no código e permite o acesso remoto aos repositórios por ser uma plataforma baseada na web.<br /><br />
