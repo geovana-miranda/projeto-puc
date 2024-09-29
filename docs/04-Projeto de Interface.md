@@ -8,5 +8,5 @@
 
 ## Protótipo no <a href='https://www.figma.com/proto/L1KjAG9uKjmryXXmqYnBJ7/Projeto-Segunda-Etapa?page-id=0%3A1&node-id=31-7&node-type=canvas&viewport=505%2C316%2C0.42&t=wfpivhlBkXvYAOdo-1&scaling=contain&content-scaling=fixed'>Figma</a>
 <h2>Tela de Login</h2>
-![tela_de_login_proto](https://github.com/user-attachments/assets/03b84d96-d9c1-49f7-9671-e90e3e2bd889)
 
+![tela_de_login_proto](https://github.com/user-attachments/assets/441be688-eaaa-4ee3-8805-2a10f40e16fd)
