@@ -1,6 +1,10 @@
-## 
-<a href='#tela'>teste</a>
-<h2> Wireframes </h2>
+## Sumário
+
+1. <a href='#wireframes'>Wireframes</a>
+2. <a href='#prototipo'>Protótipo</a>
+3. <a href='#userflow'>Userflow</a>
+
+<h2 id='wireframes'> Wireframes </h2>
 
 ![tela_de_login](https://github.com/user-attachments/assets/42b6bc34-9d47-49f2-a82a-43c400a106e6)
 ![tela_de_cadastro](https://github.com/user-attachments/assets/bad6fcfc-8b15-4787-b7c5-d7a3649b3f26)
@@ -9,12 +13,12 @@
 ![tela_de_quadro_aberto](https://github.com/user-attachments/assets/6138b1e9-9168-445a-8d78-fb07bd9abd90)
 ![tela_de_tarefa](https://github.com/user-attachments/assets/dd40d7fc-22ae-486e-bdb8-e03af0996af9)
 
-## Protótipo no <a href='https://www.figma.com/proto/L1KjAG9uKjmryXXmqYnBJ7/Projeto-Segunda-Etapa?page-id=0%3A1&node-id=31-7&node-type=canvas&viewport=505%2C316%2C0.42&t=wfpivhlBkXvYAOdo-1&scaling=contain&content-scaling=fixed'>Figma</a>
+<h2 id='prototipo'>Protótipo no</h2> <a href='https://www.figma.com/proto/L1KjAG9uKjmryXXmqYnBJ7/Projeto-Segunda-Etapa?page-id=0%3A1&node-id=31-7&node-type=canvas&viewport=505%2C316%2C0.42&t=wfpivhlBkXvYAOdo-1&scaling=contain&content-scaling=fixed'>Figma</a>
 <h3>Tela de Login</h3>
 
 ![tela_de_login_proto](https://github.com/user-attachments/assets/441be688-eaaa-4ee3-8805-2a10f40e16fd)
 
-<h3 id='tela'>Tela de Cadastro</h3>
+<h3>Tela de Cadastro</h3>
 
 ![tela_de_cadastro_proto](https://github.com/user-attachments/assets/382ae684-7594-4034-898e-5f49b496e165)
 
@@ -25,3 +29,18 @@
 <h3>Tela de Criação/Edição de Quadros</h3>
 
 ![tela_de_criacao_proto](https://github.com/user-attachments/assets/b9a461d4-d634-499b-baa7-312fac670dfd)
+
+<h3>Tela do Quadro Aberta</h3>
+
+![tela_de_quadro_aberto_proto](https://github.com/user-attachments/assets/a9623516-fd9f-42c6-86c3-5ca5e48011b1)
+
+<h3>Tela de Tarefa</h3>
+
+![tela_de_tarefa_proto](https://github.com/user-attachments/assets/a4113c6d-3e1f-4cc0-a007-51642c69a1bb)
+
+<h3>Pop-ups da Tela de Tarefa</h3>
+
+![tela_de_tarefa_pop2_proto](https://github.com/user-attachments/assets/04f628b0-146c-4277-906b-f33496239c6a)
+![tela_de_tarefa_pop1_proto](https://github.com/user-attachments/assets/d0e883db-c04b-4e70-af35-05098e55991c)
+
+<h2 id='userflow'>Userflow</h2>
