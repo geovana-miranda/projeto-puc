@@ -7,7 +7,7 @@ import FormularioCriarConta from "../../components/Formulario/FormularioCriarCon
 import FormularioLogar from "../../components/Formulario/FormularioLogar";
 
 const Cadastro = () => {
-  return (
+  
   const [nomeBotao, setNomeBotao] = useState("Já possui conta?");
   const [formLogar, setformLogar] = useState(false);
 
@@ -17,6 +17,9 @@ const Cadastro = () => {
       ? setNomeBotao("Não possui conta?")
       : setNomeBotao("Já possui conta?");
   };
+
+  return (
+
   
     <div className={styles.container}>
       <div className={styles.logo}>
