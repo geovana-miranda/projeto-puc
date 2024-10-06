@@ -2,8 +2,22 @@ import styles from "./Cadastro.module.css";
 
 import logo from "../../assets/logo.png";
 
+import {useState} from "react";
+import FormularioCriarConta from "../../components/Formulario/FormularioCriarConta";
+import FormularioLogar from "../../components/Formulario/FormularioLogar";
+
 const Cadastro = () => {
   return (
+  const [nomeBotao, setNomeBotao] = useState("Já possui conta?");
+  const [formLogar, setformLogar] = useState(false);
+
+  const paginaLogar = () => {
+    setformLogar(!formLogar);
+    !formLogar
+      ? setNomeBotao("Não possui conta?")
+      : setNomeBotao("Já possui conta?");
+  };
+  
     <div className={styles.container}>
       <div className={styles.logo}>
         <img src={logo} alt="logo da gestio" />
@@ -13,11 +27,18 @@ const Cadastro = () => {
         <h2>Simplifique suas tarefas, potencialize seus resultados.</h2>
       </div>
       <div>
-        <button className={styles.botao}>
-          Já possui conta?
+        <button onClick={() => paginaLogar()} className={styles.botao}>
+          {nomeBotao}
         </button>
       </div>
+      {!formLogar && (
+        <FormularioCriarConta
+        />
+      )}
 
+      {formLogar && (
+        <FormularioLogar />
+      )}
 
     </div>
   )

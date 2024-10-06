@@ -1,0 +1,61 @@
+.formulario {
+    border: none;
+    width: 310px;
+    height: auto;
+    background-color:rgba(217, 217, 217, 0.5);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.formulario h3 {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+}
+
+.concordar {
+    width: 280px;
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    gap: 0.7em;
+    justify-content: center;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.concordar input {
+    transform: scale(1.2);
+}
+
+.concordar p {
+    font-size: 0.75em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+.concordar p span {
+    text-decoration: underline;
+}
+
+.botaoFinalizar {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 1em;
+    background: rgb(198,128,174);
+    background: linear-gradient(90deg, rgba(198,128,174,1) 0%, rgba(151,79,207,1) 100%); 
+    width: 280px;
+    height: 30px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 0.8em;
+}
+
+.botaoFinalizar a {
+    text-decoration: none;
+    color: #FFF;
+
+}

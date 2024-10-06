@@ -1,0 +1,27 @@
+.campoFormulario {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+    width: 280px;
+}
+
+.label span {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.label input {
+    width: 265px;
+    border: none;
+    border-radius: 1em;
+    height: 2em;
+    background-color:rgba(217, 217, 217, 0.7);
+    padding-left: 1em;
+    margin-bottom: 10px;
+}
