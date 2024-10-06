@@ -1,15 +1,37 @@
 import styles from "./Cadastro.module.css";
-
 import logo from "../../assets/logo.png";
 
-import {useState} from "react";
+import { useState, useContext, useEffect } from "react";
+import { UsuarioContext } from "../../context/UsuarioContext";
+import { v4 as uuidv4 } from "uuid";
+
 import FormularioCriarConta from "../../components/Formulario/FormularioCriarConta";
 import FormularioLogar from "../../components/Formulario/FormularioLogar";
 
 const Cadastro = () => {
-  
+  const { usuarios, setUsuarios } = useContext(UsuarioContext);
+
   const [nomeBotao, setNomeBotao] = useState("Já possui conta?");
   const [formLogar, setformLogar] = useState(false);
+
+  useEffect(() => {
+    console.log(usuarios);
+    const usuariosSalvos = localStorage.getItem("usuarios");
+
+    if (usuariosSalvos) {
+      setUsuarios(JSON.parse(usuariosSalvos));
+    }
+  }, []);
+
+  const novoUsuario = (usuario) => {
+    setUsuarios([...usuarios, { ...usuario, id: uuidv4() }]);
+  };
+
+  useEffect(() => {
+    if (usuarios.length > 0) {
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    }
+  }, [usuarios]);
 
   const paginaLogar = () => {
     setformLogar(!formLogar);
@@ -19,8 +41,6 @@ const Cadastro = () => {
   };
 
   return (
-
-  
     <div className={styles.container}>
       <div className={styles.logo}>
         <img src={logo} alt="logo da gestio" />
@@ -36,15 +56,13 @@ const Cadastro = () => {
       </div>
       {!formLogar && (
         <FormularioCriarConta
+          cadastrarUsuario={(usuario) => novoUsuario(usuario)}
         />
       )}
 
-      {formLogar && (
-        <FormularioLogar />
-      )}
-
+      {formLogar && <FormularioLogar />}
     </div>
-  )
-}
+  );
+};
 
-export default Cadastro
+export default Cadastro;
