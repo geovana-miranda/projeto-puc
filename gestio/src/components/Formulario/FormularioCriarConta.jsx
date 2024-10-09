@@ -1,4 +1,5 @@
 import Input from "../Formulario/Input/Input";
+import Msg from "./Msg/Msg";
 import styles from "./Formulario.module.css";
 
 import { useState, useContext } from "react";
@@ -12,9 +13,25 @@ const Formulario = ({ cadastrarUsuario }) => {
   const [senha, setSenha] = useState("");
   const [confirmarSenha, setConfirmarSenha] = useState("");
   const [imagem, setImagem] = useState("");
-
+  const [msg, setMsg] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const usuarioExiste = usuarios.find((item) => email === item.email);
+
+    if (usuarioExiste) {
+      setMsg({ mensagem: "Usuário já cadastrado", cor: "vermelho" });
+      return;
+    } else {
+      setMsg("");
+    }
+
+    if (senha !== confirmarSenha) {
+      setMsg({ mensagem: "As senhas são diferentes", cor: "vermelho" });
+      return;
+    } else {
+      setMsg("");
+    }
 
     cadastrarUsuario({
       nome,
@@ -22,6 +39,8 @@ const Formulario = ({ cadastrarUsuario }) => {
       senha,
       imagem,
     });
+
+    setMsg({ mensagem: "Usuário cadastrado com sucesso", cor: "verde" });
 
     setNome("");
     setEmail("");
@@ -33,6 +52,7 @@ const Formulario = ({ cadastrarUsuario }) => {
     <section className={styles.formulario}>
       <form onSubmit={handleSubmit}>
         <h3>Criar conta</h3>
+        {msg && <Msg mensagem={msg} />}
 
         <div>
           <Input

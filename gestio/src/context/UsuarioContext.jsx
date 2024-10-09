@@ -10,6 +10,19 @@ export const UsuarioProvider = ({ children }) => {
       email: "geovana@gmail.com",
       senha: 12345,
       imagem: "https://github.com/geovana-miranda.png"
+    },
+    {
+      id: "2",
+      nome: "Azuylla",
+      email: "azuylla@gmail.com",
+      senha: "123",
+      imagem: "https://github.com/Azuylla.png",
+      quadros: [
+        {
+          id: "22",
+          titulo: "Férias em Curitiba"
+        }
+      ]
     }
   ]);
 

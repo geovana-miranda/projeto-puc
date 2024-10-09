@@ -4,12 +4,14 @@ import { UsuarioContext } from "../../context/UsuarioContext";
 import { useState, useContext } from "react";
 
 import Input from "./Input/Input.jsx";
+import Msg from "./Msg/Msg";
 
 const FormularioLogar = () => {
   const { usuarios, setUsuarios } = useContext(UsuarioContext);
 
   const [emailLogin, setEmailLogin] = useState("");
   const [senhaLogin, setSenhaLogin] = useState("");
+  const [msg, setMsg] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,6 +26,7 @@ const FormularioLogar = () => {
       setSenhaLogin("");
     } else {
       console.log("usuario nao encontrado");
+      setMsg({ mensagem: "Usuário ou senha inválidos", cor: "vermelho" });
     }
   };
 
@@ -31,6 +34,7 @@ const FormularioLogar = () => {
     <section className={styles.formulario}>
       <form onSubmit={handleSubmit}>
         <h3>Fazer login</h3>
+        {msg && <Msg mensagem={msg} />}
 
         <div>
           <Input
