@@ -1,0 +1,35 @@
+.cabecalho {
+    height: 60px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 2em;
+    align-items: center;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+}
+
+.minhaConta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70px;
+    border: 1px solid rgb(53, 1, 63);
+    padding: 2px;
+    border-radius: 3em;
+}
+
+.minhaConta img {
+    border-radius: 100%;
+    width: 40px;
+}
+
+.minhaConta select {
+    background-color: transparent;
+    border: none;
+}

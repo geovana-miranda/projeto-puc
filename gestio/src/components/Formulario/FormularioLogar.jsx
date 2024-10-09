@@ -2,16 +2,19 @@ import styles from "./Formulario.module.css";
 
 import { UsuarioContext } from "../../context/UsuarioContext";
 import { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Input from "./Input/Input.jsx";
 import Msg from "./Msg/Msg";
 
 const FormularioLogar = () => {
+
   const { usuarios, setUsuarios } = useContext(UsuarioContext);
 
   const [emailLogin, setEmailLogin] = useState("");
   const [senhaLogin, setSenhaLogin] = useState("");
   const [msg, setMsg] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,11 +24,14 @@ const FormularioLogar = () => {
     );
 
     if (usuarioVerificado) {
-      console.log("usuario encontrado");
+      setMsg("");
       setEmailLogin("");
       setSenhaLogin("");
+
+      const idUsuario = usuarioVerificado.id;
+      navigate("/home", {state: {idUsuario}});
+      
     } else {
-      console.log("usuario nao encontrado");
       setMsg({ mensagem: "Usuário ou senha inválidos", cor: "vermelho" });
     }
   };
@@ -34,6 +40,7 @@ const FormularioLogar = () => {
     <section className={styles.formulario}>
       <form onSubmit={handleSubmit}>
         <h3>Fazer login</h3>
+
         {msg && <Msg mensagem={msg} />}
 
         <div>
