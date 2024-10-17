@@ -1,4 +1,5 @@
 import styles from "./ModalCriarQuadro.module.css";
+import { useState } from "react";
 
 const ModalCriarQuadro = ({
   quadros,
@@ -8,9 +9,20 @@ const ModalCriarQuadro = ({
   setTituloQuadro,
   novoQuadro,
 }) => {
+  const [msgErroQuadro, setMsgErroQuadro] = useState("");
   const criandoQuadro = () => {
+    if (tituloQuadro === "") {
+      setMsgErroQuadro( "Digite um nome válido" );
+      return;
+    }
+
+    if (quadros.some((item) => tituloQuadro === item.titulo)) {
+      setMsgErroQuadro( "Já existe um quadro com esse nome" );
+      return;
+    }
     novoQuadro(tituloQuadro);
     setAbrirModalCriar(!abrirModalCriar);
+    setMsgErroQuadro("");
   };
 
   if (abrirModalCriar) {
@@ -19,6 +31,11 @@ const ModalCriarQuadro = ({
         <div className={styles.modal}>
           <div className={styles.cabecalhoModal}>
             <h3>Criar Quadro</h3>
+            {msgErroQuadro && (
+              <div className={styles.msgErro}>
+                <p>{msgErroQuadro}</p>
+              </div>
+            )}
 
             <img
               src="https://cdn.blablacar.com/wp-content/uploads/br/2024/05/05094506/como-planejar-uma-viagem.webp"

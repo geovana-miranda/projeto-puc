@@ -1,0 +1,19 @@
+.itemLista {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.fotoTitulo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.fotoTitulo img {
+    width: 70px;
+    border-radius: 0.6em;
+}

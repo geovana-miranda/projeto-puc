@@ -6,6 +6,7 @@ import { UsuarioContext } from "../../context/UsuarioContext";
 import { v4 as uuidv4 } from "uuid";
 import Cabecalho from "../../components/Cabecalho/Cabecalho";
 import ModalCriarQuadro from "../../components/Modal/ModalCriarQuadro";
+import Quadro from "../../components/Quadro/Quadro";
 
 const Inicio = () => {
   const { usuarios, setUsuarios } = useContext(UsuarioContext);
@@ -87,9 +88,9 @@ const Inicio = () => {
           <h3>Meus quadros</h3>
 
           <ul className={styles.meusQuadros}>
-            <li>Exemplo de quadro</li>
-            <li>Exemplo de quadro</li>
-            <li>Exemplo de quadro</li>
+            <Quadro
+                quadros={quadros}
+              />
           </ul>
         </div>
       </section>
