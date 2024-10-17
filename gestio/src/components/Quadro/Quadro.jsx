@@ -1,6 +1,11 @@
 import styles from "./Quadro.module.css";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { useState } from "react";
+import ModalAlterarQuadro from "../Modal/ModalAlterarQuadro";
 
-const Quadro = ({ quadros }) => {
+const Quadro = ({ quadros , setQuadros , usuarioAtual }) => {
+  const [quadroSelecionado, setQuadroSelecionado] = useState("");
+  const [abrirModalAlterar, setAbrirModalAlterar] = useState(false);
 
   return (
     <>
@@ -16,9 +21,25 @@ const Quadro = ({ quadros }) => {
             />
             <p>{quadro.titulo}</p>
           </div>
+          <BsThreeDotsVertical
+            className={styles.icone}
+            onClick={() => {
+              setAbrirModalAlterar(true);
+              setQuadroSelecionado(quadro);
+            }}
+          />
           
         </li>
       ))}
+      {abrirModalAlterar && (
+        <ModalAlterarQuadro
+          quadros={quadros}
+          setQuadros={setQuadros}
+          abrirModalAlterar={abrirModalAlterar}
+          setAbrirModalAlterar={setAbrirModalAlterar}
+          quadroSelecionado={quadroSelecionado}
+        />
+      )}
 
       
     </>

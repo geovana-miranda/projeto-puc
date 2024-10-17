@@ -90,6 +90,8 @@ const Inicio = () => {
           <ul className={styles.meusQuadros}>
             <Quadro
                 quadros={quadros}
+                setQuadros={setQuadros}
+                usuarioAtual={usuarioAtual}
               />
           </ul>
         </div>
