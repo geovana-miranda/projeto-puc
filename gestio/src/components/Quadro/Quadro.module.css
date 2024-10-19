@@ -17,3 +17,26 @@
     width: 70px;
     border-radius: 0.6em;
 }
+
+.icone {
+    cursor: pointer;
+}
+
+.tituloQuadros {
+    color: #FFF;
+    font-weight: 300;
+    margin: 0.5em 1em;
+}
+
+.meusQuadros {
+    background-color:rgba(217, 217, 217, 0.4);
+    height: auto;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    text-align: center;
+    align-items: center;
+    color: #FFF;
+}

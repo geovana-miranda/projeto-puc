@@ -1,4 +1,11 @@
-.container{
+.pagina {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(123,118,144);
+    background: radial-gradient(circle, rgba(123,118,144,1) 0%, rgba(118,53,168,1) 50%, rgba(151,72,124,1) 100%);
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;

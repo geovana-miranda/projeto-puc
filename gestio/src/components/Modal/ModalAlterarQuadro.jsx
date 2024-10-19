@@ -1,6 +1,7 @@
 import styles from "./ModalCriarQuadro.module.css";
 
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { UsuarioContext } from "../../context/UsuarioContext";
 
 const ModalAlterarQuadro = ({
   quadros,
@@ -8,37 +9,80 @@ const ModalAlterarQuadro = ({
   abrirModalAlterar,
   setAbrirModalAlterar,
   quadroSelecionado,
+  excluirQuadro,
+  alterarQuadro,
+  usuarioAtual,
 }) => {
+  const { usuarios, setUsuarios } = useContext(UsuarioContext);
+
   const [titulo, setTitulo] = useState(quadroSelecionado.titulo);
+  const [emailMembro, setEmailMembro] = useState("");
+  const [membro, setMembro] = useState("");
   const [msgErroAlterarQuadro, setMsgErroAlterarQuadro] = useState("");
 
+  const [abrirDropDown, setAbrirDropDrown] = useState(false);
 
-  const alterarQuadro = () => {
-    if (titulo === "") {
-      setMsgErroAlterarQuadro( "Digite um título válido" );
-        return;
+  const [idMembrosQuadro, setIdMembrosQuadros] = useState(
+    quadroSelecionado.membros || []
+  );
+
+  const membrosQuadro = usuarios.filter((usuario) =>
+    idMembrosQuadro.find((item) => item === usuario.id) ? usuario : ""
+  );
+
+  const adicionandoMembro = () => {
+    if (membro) {
+      setIdMembrosQuadros((membrosAtuais) => [...membrosAtuais, membro.id]);
+      setEmailMembro("");
+      setAbrirDropDrown(false);
     }
-
-    if (quadros.some((item) => titulo === item.titulo)) {
-      setMsgErroAlterarQuadro( "Você já adicionou esse quadro" );
-        return;
-    }
-
-    const quadroAtulizado = quadros.map((item) =>
-      item.id === quadroSelecionado.id ? { ...item, titulo: titulo } : item
-    );
-
-    setQuadros(quadroAtulizado);
-    setAbrirModalAlterar(!abrirModalAlterar);
-    setMsgErroAlterarQuadro("");
-
   };
 
-  const excluirQuadro = () => {
-    const quadrosAtualizados = quadros.filter(
-      (item) => item.id !== quadroSelecionado.id
-    );
-    setQuadros(quadrosAtualizados);
+  const buscarMembro = () => {
+    if (emailMembro === usuarioAtual.email) {
+      setMsgErroAlterarQuadro("Você não pode adicionar você mesmo");
+      return;
+    }
+
+    const buscandoMembro = usuarios.find((item) => emailMembro === item.email);
+
+    if (buscandoMembro) {
+      setMsgErroAlterarQuadro("");
+      setMembro(buscandoMembro);
+      setAbrirDropDrown(true);
+    } else {
+      setMsgErroAlterarQuadro("Usuário não encontrado");
+      return;
+    }
+  };
+
+  const excluindoMembro = (id) => {
+    const membrosAtualizados = idMembrosQuadro.filter((item) => item !== id);
+    setIdMembrosQuadros(membrosAtualizados);
+  };
+
+  const alterandoQuadro = () => {
+    if (titulo === "") {
+      setMsgErroAlterarQuadro("Digite um título válido");
+      return;
+    }
+
+    if (
+      quadros.some(
+        (item) => titulo === item.titulo && item.id !== quadroSelecionado.id
+      )
+    ) {
+      setMsgErroAlterarQuadro("Esse quadro já existe");
+      return;
+    }
+
+    alterarQuadro(quadroSelecionado, titulo, idMembrosQuadro);
+    setAbrirModalAlterar(!abrirModalAlterar);
+    setMsgErroAlterarQuadro("");
+  };
+
+  const excluindoQuadro = () => {
+    excluirQuadro(quadroSelecionado.id);
     setAbrirModalAlterar(!abrirModalAlterar);
   };
 
@@ -79,16 +123,63 @@ const ModalAlterarQuadro = ({
                 />
               </label>
             </form>
+
             <div>
               <span className={styles.spanModal}>Membros</span>
-              <input className={styles.inputModal} type="text" />
+              <input
+                className={styles.inputModal}
+                type="text"
+                placeholder="Convite por e-mail"
+                value={emailMembro}
+                onChange={(e) => setEmailMembro(e.target.value)}
+                onKeyDown={(e) => (e.key === "Enter" ? buscarMembro() : "")}
+              />
+
+              {membrosQuadro &&
+                membrosQuadro.map((item) => {
+                  return (
+                    <div key={item.id} className={styles.membros}>
+                      <img src={item.imagem} alt="" />
+                      <div className={styles.dados}>
+                        <span>{item.nome}</span>
+                        <span className={styles.email}>{item.email}</span>
+                      </div>
+                      <span
+                        className={styles.remover}
+                        onClick={() => excluindoMembro(item.id)}
+                      >
+                        remover
+                      </span>
+                    </div>
+                  );
+                })}
+
+              {abrirDropDown && membro && (
+                <div className={styles.dropdown}>
+                  <div
+                    className={styles.dropdownItem}
+                    onClick={() => adicionandoMembro()}
+                  >
+                    <img
+                      src={membro.imagem}
+                      alt={membro.nome}
+                      className={styles.avatar}
+                    />
+                    <span>{membro.email}</span>
+                  </div>
+                </div>
+              )}
             </div>
+
             <div className={styles.botoes}>
-              <button className={styles.botao} onClick={() => excluirQuadro()}>
+              <button
+                className={styles.botao}
+                onClick={() => excluindoQuadro()}
+              >
                 Excluir Quadro
               </button>
               <button
-                onClick={() => alterarQuadro()}
+                onClick={() => alterandoQuadro()}
                 className={styles.botaoColorido}
               >
                 Salvar

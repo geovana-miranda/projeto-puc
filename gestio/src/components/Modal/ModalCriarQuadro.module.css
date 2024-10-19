@@ -25,7 +25,9 @@
 }
 
 .cabecalhoModal h3 {
-    color: #000;
+    color: #464646;
+    font-weight: 400;
+
 }
 
 .cabecalhoModal img {
@@ -42,13 +44,19 @@
 
 .spanModal {
     display: flex;
-    flex-direction: column;
+    color:#464646;
+    font-weight: 400;
 }
 
 .inputModal {
     width: 300px;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #464646;
+    font-weight: 400;
+    font-size: 1em;
+    color:#464646;
+    margin: 0.5em 0;
+    outline: none;
 }
 
 .botoes {
@@ -70,16 +78,16 @@
 }
 
 .botao {
-    border: 1px solid #000;
+    border: 1px solid #464646;
     background: none;
-    color: #000;
+    color: #464646;
 }
 
 .botaoColorido {
-        color: #FFF;
-        border: none;
-        background: rgb(198,128,174);
-        background: linear-gradient(90deg, rgba(198,128,174,1) 0%, rgba(151,79,207,1) 100%); 
+    color: #FFF;
+    border: none;
+    background: rgb(198,128,174);
+    background: linear-gradient(90deg, rgba(198,128,174,1) 0%, rgba(151,79,207,1) 100%); 
 }
 
 .fechar {
@@ -103,5 +111,72 @@
 }
 
 .icone {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  .dropdownItem {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .dropdownItem span {
+    color: #464646;
+
+    }
+  
+  .dropdownItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+.membros {
+    margin-top: 0.7em;
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    color: #464646;
+    border-top: 1px solid #464646;
+    border-bottom: 1px solid #464646;
+    padding: 0.15em;
+}
+
+.membros img {
+    border-radius: 100%;
+    width: 40px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    margin-left: -3.5em;
+}
+
+.email {
+    font-size: 0.8em;
+}
+
+.remover {
+    font-size: 0.6em;
     cursor: pointer;
 }
