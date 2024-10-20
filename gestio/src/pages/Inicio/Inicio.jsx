@@ -1,6 +1,6 @@
 import styles from "./Inicio.module.css";
 
-import { useContext , useState , useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { UsuarioContext } from "../../context/UsuarioContext";
 import { v4 as uuidv4 } from "uuid";
@@ -8,7 +8,6 @@ import { v4 as uuidv4 } from "uuid";
 import Cabecalho from "../../components/Cabecalho/Cabecalho";
 import ModalCriarQuadro from "../../components/Modal/ModalCriarQuadro";
 import Quadro from "../../components/Quadro/Quadro";
-
 
 const Inicio = () => {
   const { usuarios, setUsuarios } = useContext(UsuarioContext);
@@ -26,9 +25,6 @@ const Inicio = () => {
   );
   const [abrirModalCriar, setAbrirModalCriar] = useState(false);
   const [membros, setMembros] = useState([]);
-
-
-
 
   useEffect(() => {
     const usuariosSalvos = localStorage.getItem("usuarios");
@@ -63,17 +59,18 @@ const Inicio = () => {
     const quadrosAtualizadosUsuario = [...quadros, quadroCriado];
 
     const usuariosAtualizados = usuarios.map((item) => {
-      
       if (item.id === usuarioAtual.id) {
         return { ...item, quadros: quadrosAtualizadosUsuario };
       }
 
-      const membrosAtualizados = membros.some(membro => item.id === membro.id)
+      const membrosAtualizados = membros.some(
+        (membro) => item.id === membro.id
+      );
       if (membrosAtualizados) {
         return {
           ...item,
-          quadros: [...(item.quadros) || [], quadroCriado]
-        }
+          quadros: [...(item.quadros || []), quadroCriado],
+        };
       }
 
       return item;
@@ -90,15 +87,13 @@ const Inicio = () => {
 
     setTituloQuadro("");
     setMembros([]);
-  }
+  };
 
   return (
-    <div  className={styles.pagina}>
-
+    <div className={styles.pagina}>
       <Cabecalho idUsuario={idUsuario} />
 
       <section className={styles.container}>
-
         <div className={styles.pesquisa}>
           <input
             className={styles.pesquisaInput}
@@ -108,33 +103,36 @@ const Inicio = () => {
         </div>
 
         <div className={styles.criarQuadro}>
-
-          <button className={styles.botaoCriarQuadro} onClick={() => {setAbrirModalCriar(!abrirModalCriar)}}>+</button>
+          <button
+            className={styles.botaoCriarQuadro}
+            onClick={() => {
+              setAbrirModalCriar(!abrirModalCriar);
+            }}
+          >
+            +
+          </button>
           <p>Criar novo quadro</p>
 
           <ModalCriarQuadro
-          quadros={quadros}
-          abrirModalCriar={abrirModalCriar}
-          setAbrirModalCriar={setAbrirModalCriar}
-          tituloQuadro={tituloQuadro}
-          setTituloQuadro={setTituloQuadro}
-          novoQuadro={(titulo, membros) => criarQuadro(titulo, membros)}
-          membros={membros}
-          setMembros={setMembros}
-          usuarioAtual={usuarioAtual}        
+            quadros={quadros}
+            abrirModalCriar={abrirModalCriar}
+            setAbrirModalCriar={setAbrirModalCriar}
+            tituloQuadro={tituloQuadro}
+            setTituloQuadro={setTituloQuadro}
+            novoQuadro={(titulo, membros) => criarQuadro(titulo, membros)}
+            membros={membros}
+            setMembros={setMembros}
+            usuarioAtual={usuarioAtual}
           />
-
         </div>
 
         <div className={styles.quadros}>
-         
-            <Quadro
-                quadros={quadros}
-                setQuadros={setQuadros}
-                usuarioAtual={usuarioAtual}
-                setUsuarioAtual={setUsuarioAtual}
-              />
-
+          <Quadro
+            quadros={quadros}
+            setQuadros={setQuadros}
+            usuarioAtual={usuarioAtual}
+            setUsuarioAtual={setUsuarioAtual}
+          />
         </div>
       </section>
     </div>

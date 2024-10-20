@@ -47,6 +47,7 @@ const Quadro = ({ quadros, setQuadros, usuarioAtual, setUsuarioAtual }) => {
     };
 
     const usuariosAtualizados = usuarios.map((usuario) => {
+
       if (usuario.id === usuarioAtual.id) {
         return {
           ...usuario,
@@ -59,7 +60,7 @@ const Quadro = ({ quadros, setQuadros, usuarioAtual, setUsuarioAtual }) => {
       if (!idMembros.includes(usuario.id)) {
         return {
           ...usuario,
-          quadros: usuario.quadros.filter((item) => item.id !== quadro.id),
+          quadros: usuario.quadros.filter((item) => item.id !== quadro.id) || []
         };
       } else {
         const quadrosMembro = usuario.quadros.filter(
@@ -68,7 +69,6 @@ const Quadro = ({ quadros, setQuadros, usuarioAtual, setUsuarioAtual }) => {
         return { ...usuario, quadros: [...quadrosMembro, quadroAlterado] };
       }
 
-      return usuario;
     });
 
     localStorage.setItem("usuarios", JSON.stringify(usuariosAtualizados));

@@ -1,6 +1,6 @@
 import styles from "./ModalCriarQuadro.module.css";
 
-import { useState, useContext } from "react";
+import { useState, useContext, useRef, useEffect } from "react";
 import { UsuarioContext } from "../../context/UsuarioContext";
 
 const ModalAlterarQuadro = ({
@@ -29,6 +29,21 @@ const ModalAlterarQuadro = ({
   const membrosQuadro = usuarios.filter((usuario) =>
     idMembrosQuadro.find((item) => item === usuario.id) ? usuario : ""
   );
+
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    const clicouFora = (e) => {
+      if (modalRef.current && !modalRef.current.contains(e.target)) {
+        setAbrirModalAlterar(!abrirModalAlterar)      }
+    };
+    document.addEventListener("mousedown", clicouFora);
+    return () => {
+      document.removeEventListener("mousedown", clicouFora);
+    };
+  }, [abrirModalAlterar]);
+
+  if (!abrirModalAlterar) return null;
 
   const adicionandoMembro = () => {
     if (membro) {
@@ -89,13 +104,7 @@ const ModalAlterarQuadro = ({
   if (abrirModalAlterar) {
     return (
       <section className={styles.background}>
-        <div className={styles.modal}>
-          <span
-            onClick={(e) => setAbrirModalAlterar(!abrirModalAlterar)}
-            className={styles.fechar}
-          >
-            x
-          </span>
+        <div className={styles.modal} ref={modalRef}>
           <div className={styles.cabecalhoModal}>
             <h3>Alterar Quadro</h3>
 

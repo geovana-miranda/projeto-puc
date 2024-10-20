@@ -1,5 +1,5 @@
 import styles from "./ModalCriarQuadro.module.css";
-import { useState, useContext } from "react";
+import { useState, useContext, useRef, useEffect } from "react";
 import { UsuarioContext } from "../../context/UsuarioContext";
 
 const ModalCriarQuadro = ({
@@ -20,6 +20,27 @@ const ModalCriarQuadro = ({
 
   const [abrirDropDown, setAbrirDropDrown] = useState(false);
   const [msgErroQuadro, setMsgErroQuadro] = useState("");
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    const clicouFora = (e) => {
+      if (modalRef.current && !modalRef.current.contains(e.target)) {
+        setAbrirModalCriar(!abrirModalCriar);
+        setTituloQuadro("");
+        setMsgErroQuadro("");
+        setEmailMembro("");
+        setAbrirDropDrown(false);
+        setMembro("");
+        setMembros([]);
+      }
+    };
+    document.addEventListener("mousedown", clicouFora);
+    return () => {
+      document.removeEventListener("mousedown", clicouFora);
+    };
+  }, [abrirModalCriar]);
+
+  if (!abrirModalCriar) return null;
 
   const criandoQuadro = () => {
     if (tituloQuadro === "") {
@@ -71,7 +92,7 @@ const ModalCriarQuadro = ({
   if (abrirModalCriar) {
     return (
       <section className={styles.background}>
-        <div className={styles.modal}>
+        <div className={styles.modal} ref={modalRef}>
           <div className={styles.cabecalhoModal}>
             <h3>Criar Quadro</h3>
 

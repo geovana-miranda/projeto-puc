@@ -90,11 +90,6 @@
     background: linear-gradient(90deg, rgba(198,128,174,1) 0%, rgba(151,79,207,1) 100%); 
 }
 
-.fechar {
-    color: #000;
-    cursor: pointer;
-}
-
 .msgErro {
     text-align: center;
     font-family: "Poppins", sans-serif;
