@@ -57,5 +57,35 @@
 .botaoFinalizar a {
     text-decoration: none;
     color: #FFF;
+}
 
+.carregarImagem label {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+    width: 280px;
+}
+
+.carregarImagem span {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.botaoCarregarImagem {
+    width: 150px;
+    border: none;
+    border-radius: 1em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    background-color:rgba(217, 217, 217, 0.7);
+    padding-left: 1em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #303030;
 }
